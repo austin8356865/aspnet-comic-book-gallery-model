@@ -5,8 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ComicBookGalleryModel.Models
+namespace ComicBookLibraryManager.Models
 {
+    /// <summary>
+    /// Represents a role.
+    /// </summary>
     public class Role
     {
         public int Id { get; set; }

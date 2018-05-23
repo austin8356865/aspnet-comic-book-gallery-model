@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ComicBookGalleryModel.Models
+namespace ComicBookLibraryManager.Models
 {
+    /// <summary>
+    /// Represents a comic book.
+    /// </summary>
     public class ComicBook
     {
         public ComicBook()
@@ -22,8 +24,11 @@ namespace ComicBookGalleryModel.Models
         public decimal? AverageRating { get; set; }
 
         public Series Series { get; set; }
-        public virtual ICollection<ComicBookArtist> Artists { get; set; }
+        public ICollection<ComicBookArtist> Artists { get; set; }
 
+        /// <summary>
+        /// The display text for a comic book.
+        /// </summary>
         public string DisplayText
         {
             get
@@ -32,6 +37,11 @@ namespace ComicBookGalleryModel.Models
             }
         }
 
+        /// <summary>
+        /// Adds an artist to the comic book.
+        /// </summary>
+        /// <param name="artist">The artist to add.</param>
+        /// <param name="role">The role that the artist had on this comic book.</param>
         public void AddArtist(Artist artist, Role role)
         {
             Artists.Add(new ComicBookArtist()

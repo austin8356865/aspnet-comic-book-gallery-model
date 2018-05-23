@@ -5,8 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ComicBookGalleryModel.Models
+namespace ComicBookLibraryManager.Models
 {
+    /// <summary>
+    /// Represents a comic book series.
+    /// </summary>
     public class Series
     {
         public Series()

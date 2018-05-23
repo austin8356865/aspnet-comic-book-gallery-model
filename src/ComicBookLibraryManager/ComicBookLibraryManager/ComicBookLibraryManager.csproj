@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DB1131DE-EA8F-4E71-B907-3EC2709BCA47}</ProjectGuid>
+    <ProjectGuid>{D30BE089-4B9E-4532-ABE8-5F33EF03C585}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ComicBookGalleryModel</RootNamespace>
-    <AssemblyName>ComicBookGalleryModel</AssemblyName>
+    <RootNamespace>ComicBookLibraryManager</RootNamespace>
+    <AssemblyName>ComicBookLibraryManager</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,8 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context.cs" />
-    <Compile Include="DatabaseInitializer.cs" />
+    <Compile Include="Helpers\ConsoleHelper.cs" />
+    <Compile Include="Data\Context.cs" />
+    <Compile Include="Data\Repository.cs" />
+    <Compile Include="Data\DatabaseInitializer.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\ComicBook.cs" />
     <Compile Include="Models\ComicBookArtist.cs" />

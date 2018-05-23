@@ -1,11 +1,10 @@
-﻿using ComicBookGalleryModel.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ComicBookGalleryModel
+namespace ComicBookGalleryModel.Models
 {
     public class ComicBookArtist
     {
@@ -17,6 +16,5 @@ namespace ComicBookGalleryModel
         public virtual ComicBook ComicBook { get; set; }
         public virtual Artist Artist { get; set; }
         public virtual Role Role { get; set; }
-
     }
 }
